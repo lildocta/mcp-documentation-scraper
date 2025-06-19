@@ -23,12 +23,20 @@ The initial version should focus on core functionality with these primary featur
     - Server follows MCP patterns and can be upgraded to full MCP when Python 3.10+ is available
     - Added start_server.py and test_server.py for easy testing
 
-- [ ] **Story 1.2**: Define MCP tools/capabilities
+- [x] **Story 1.2**: Define MCP tools/capabilities
   - **Acceptance Criteria**:
-    - Define scraping tool interface
-    - Define search tool interface
-    - Define indexing tool interface
+    - Define scraping tool interface ✅
+    - Define search tool interface ✅
+    - Define indexing tool interface ✅
   - **Priority**: High
+  - **Status**: COMPLETED
+  - **Notes**:
+    - Created comprehensive tool interfaces in `src/tools/` directory
+    - Implemented `BaseTool` abstract base class for consistency
+    - `ScrapingTool` provides URL scraping and content parsing capabilities
+    - `SearchTool` provides keyword, semantic, and hybrid search capabilities
+    - `IndexingTool` provides document management and index operations
+    - All tools follow MCP protocol patterns with proper input/output schemas
 
 ### Epic 2: Web Scraping Tool
 **Goal**: Build a robust web scraping mechanism for documentation
