@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+sqlite3
+lxml
+pytest
+fastapi
+uvicorn
+pydantic
+trafilatura
+diskcache
+whoosh
